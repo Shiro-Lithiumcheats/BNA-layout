@@ -1,5 +1,5 @@
 // This javascript modifies the sub-header text of the site
-// Credits to catbox.moe for the script itself
+// Credits to catbox.moe for the random array index number.
 
 
 // Verification that the js file has been included
