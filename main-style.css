@@ -1,0 +1,193 @@
+/*
+  Text Effects
+*/
+@keyframes body-load {
+  0%  {opacity: 0;}
+  50% {opacity: 0.50;} 
+  75% {opacity: 0.80;} 
+  80% {opacity: 0.85;} 
+  90% {opacity: 0.90;} 
+  100% {opacity: 1;} 
+}
+
+@keyframes element-load {
+   0%  {opacity: 0;}
+  50% {opacity: 0.50;} 
+  75% {opacity: 0.80;} 
+  80% {opacity: 0.85;} 
+  90% {opacity: 0.90;} 
+  100% {opacity: 1;} 
+}
+
+@keyframes ahvr {
+  to   {letter-spacing: 4px;}
+  from  {letter-spacing: 1px;}
+
+}
+
+@keyframes ghetto-spacin {
+  to   {letter-spacing: 1px;}
+  from  {letter-spacing: 4px;} 
+}
+
+body {
+  background-color: black;
+  color: transparent;
+  text-align: center;
+  animation-name: body-load;
+  animation-duration: 2s;
+/*  background-image: url("https://media.giphy.com/media/82nJoUI8tKg5G/giphy.gif"); */
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
+.broke_center_container {
+  margin-top: 15%;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0,0,0,.6);
+  animation-name: element-load;
+  animation-duration: 3s;
+  text-shadow: -2px 0px 2px #9e9456;
+}
+
+.broke_header {
+  color: #9e9456;
+  text-transform: uppercase;
+  font-size: 45px;
+  margin-bottom: 4px;
+}
+
+.broke_sub_header {
+  color: #514b2c;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.broke_divider {
+  color: #a37711;   
+  background-color: white;
+  width: 350px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+/*  border-color: white; */
+  border-image: linear-gradient(white, pink , green);
+}
+
+.broke_roster_container {
+  overflow: auto; 
+  text-align: center;
+}
+
+.broke_roster {
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: auto;
+  line-height: 1.8;
+}
+
+
+
+.broke_roster a {
+  text-decoration: none;
+  color: grey;
+  animation-name: ghetto-spacin;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  letter-spacing: 1px;
+}
+
+.broke_roster a:hover {
+  animation-name: ahvr;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  /*color: #d69c17; */
+  color: white;
+   text-shadow: -2px 0px 2px #9e9456;
+  letter-spacing: 4px;
+}
+
+
+.broke_link_container {
+  width: auto;
+  height: auto;
+  color: white;
+}
+
+
+.broke_links a {
+  animation-name: ghetto-spacin;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-decoration: none;
+  color: grey;
+   text-shadow: -2px 0px 2px #9e9456;
+  letter-spacing: 1px;
+}
+
+
+.broke_links a:hover {
+  animation-name: ahvr;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  /*color: #d69c17; */
+  color: white;
+   text-shadow: -2px 0px 2px #9e9456; 
+  letter-spacing: 4px;
+
+}
+
+/* This is for alerting the user
+of certain aspects/ things that 
+are broken as of their current
+viewing.
+*/
+.broke_alert_container {
+ margin-top: 0%;
+ position: relative;
+ z-index: -1;
+ width: inherit;
+ height: 25px;
+ color: white;
+ text-align: center;
+ background-color: black;
+}
+
+.broke_alert {
+  padding-bottom: 5px;
+  -webkit-font-smoothing: antialiased;
+  border-style: hidden solid solid solid;
+  border-color: #9e9456;
+  border-width: 1px;
+  background-color: black;
+  text-align: center;
+  font-family: verdana; 
+  font-size: 15px;
+  width: inherit;
+  height: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+
+.show {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
